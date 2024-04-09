@@ -1,4 +1,4 @@
-# Password-Generator
+# Password-Generator🛅🔐
 # Awesome Password Generator :key:
 
 Welcome to the Awesome Password Generator! :rocket: This application helps you generate strong and secure passwords effortlessly.
@@ -28,11 +28,12 @@ Welcome to the Awesome Password Generator! :rocket: This application helps you g
 
 ## Preview
 
-![Password Generator Preview](/images/preview.png)
+![image](https://github.com/aayush-017868/Password-Generator/assets/119842199/be04acb6-e1c2-416e-b5ed-0837706991ee)
+
 
 ## Feedback
 
-If you have any feedback or suggestions to improve this application, feel free to [open an issue](https://github.com/your-username/awesome-password-generator/issues) or [create a pull request](https://github.com/your-username/awesome-password-generator/pulls). Your contributions are highly appreciated! :raised_hands:
+If you have any feedback or suggestions to improve this application, feel free to [open an issue](https://github.com/aayush-017868/password-generator/issues) or [create a pull request](https://github.com/aayush-017868/password-generator/pulls). Your contributions are highly appreciated! :raised_hands:
 
 ## License
 
