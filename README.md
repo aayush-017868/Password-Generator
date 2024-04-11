@@ -12,7 +12,7 @@ Welcome to the Awesome Password Generator! :rocket: This application helps you g
 
 ## How to Use
 
-1. Visit the [Awesome Password Generator](https://example.com) website.
+1. Visit the [Awesome Password Generator](https://aayush-017868.github.io/Password-Generator/) website.
 2. Select your desired password length from the dropdown menu.
 3. Click the "Generate Password" button.
 4. Your strong and secure password will be generated instantly.
