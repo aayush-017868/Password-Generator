@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&amp;display=swap" rel="stylesheet">
     <link rel="icon" href="images/ps-icon.png" type="image/icon type">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
@@ -10,26 +13,42 @@
 </head>
 <body>
     <div class="container">
-        <h1>Generate a <br><span>Random Password</span></h1>
-        <div class="display">
-            <input type="text" name="" id="password" placeholder="Password">
-            <img src="images/copy.png" class="copy-icon">
-            <div class="message">Copied to clipboard</div>
-        </div>
+        <h1>Generate a <br><span>Random Pin/Password</span></h1>
         <div class="ans">
-            <div class="option">
-                <div class="optionHeader"><p>Select Password Length</p></div>
-                <select name="selector" class="selector" id="selectNum">
-                    <option value="" selected disabled hidden></option>
-                    <option value="8">8</option>
-                    <option value="12">12</option>
-                    <option value="16">16</option>
-                    <option value="20">20</option>
-                </select>
+                <div class="option">
+                    <div class="optionBox">
+                        <div class="optionHeader"><p>Select Type</p></div>
+                        <select name="selector" class="selector" id="selectType">
+                            <option value="">Select Type</option>
+                            <option value="pin">Pin</option>
+                            <option value="pass">Password</option>
+                        </select>
+                    </div>
+                    <div class="optionBox">
+                        <div class="optionHeader"><p>Select Length</p></div>
+                        <select name="selector" class="selector" id="selectNum">
+                            <option value="">Select Length</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="8">8</option>
+                            <option value="12">12</option>
+                            <option value="16">16</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+
+            
             </div>
             <button id="btn">
             <img src="images/generate.png">    
-            Generate Password</button>
+            Generate</button>
+        </div>
+        <div class="display">
+            <input type="text" name="" id="password" placeholder="Password">
+            <div class="copy-img">
+                <img src="images/copy.png" class="copy-icon">
+            </div>
+            <div class="message">Copied to clipboard</div>
         </div>
         </div>
     <script src="index.js"></script>

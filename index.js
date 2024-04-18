@@ -4,12 +4,15 @@ const smalls = 'abcdefghijklmnopqrstuvwxyz';
 const numbers = '0123456789';
 const symbols = '!@#$%^&*()-_=+[]{},.<>?;:|';
 
+
+var reqtype;
 var reqLength;
-$(document).ready(function() {
+$(document).ready(function(){
+    $('#selectType').change(function(){
+        reqtype = $(this).val();
+    });
     $('#selectNum').change(function() {
-        reqLength = $(this).val();
-        // console.log(reqLength); // Output the selected value to console
-        // You can now use the reqLength variable for further processing
+        reqLength = $(this).val(); 
     });
 });
 
@@ -17,17 +20,27 @@ $(document).ready(function() {
 var allChars = capitals + smalls + numbers + symbols;
 
 $('#btn').click(function(){
+    if(reqtype == "pin"){
+       let pin = "";
+       while(pin.length < reqLength){
+        var randDigit = Math.floor(Math.random() * numbers.length);
+        pin += randDigit;
+       }
+       $('#password').val(pin); 
+    }
 //Firstly, adding the must characters into the password
-   let password = "";
-   password += capitals[Math.floor(Math.random() * capitals.length)];
-   password += smalls[Math.floor(Math.random() * smalls.length)];
-   password += numbers[Math.floor(Math.random() * numbers.length)];
-   password += symbols[Math.floor(Math.random() * symbols.length)];
+    else if(reqtype == "pass"){
+        let password = "";
+        password += capitals[Math.floor(Math.random() * capitals.length)];
+        password += smalls[Math.floor(Math.random() * smalls.length)];
+        password += numbers[Math.floor(Math.random() * numbers.length)];
+        password += symbols[Math.floor(Math.random() * symbols.length)];
+        while(password.length < reqLength){
+         password += allChars[Math.floor(Math.random() * allChars.length)];
+        }
+        $('#password').val(password);
+    }
 //Now till the reqLength, add characters into the password
-   while(password.length < reqLength){
-    password += allChars[Math.floor(Math.random() * allChars.length)];
-   }
-   $('#password').val(password);
 });
 
 
